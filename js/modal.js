@@ -1,23 +1,20 @@
-function include(file) {
+var image_type = {'march_madness': '.png', 'model_success': '.png', 'movie_recom': '.jpg', 'ocr_scan': '.png', 'shotput_analytics': '.jpg',
+                  'shotput_analytics': '.jpg', 'shotput_analytics': '.jpg', 'shotput_analytics': '.jpg', 'shotput_analytics': '.jpg'};
 
-  var script  = document.createElement('script');
-  script.src  = file;
-  script.type = 'text/javascript';
-  script.defer = true;
-
-  document.getElementsByTagName('head').item(0).appendChild(script);
-
-}
 
 function openModal(e) {
   var project = findProject(e);
   var project_location = '../bduale.github.io/projects/' + project.toString() + '/';
-  var project_js = project_location + project.toString() + '.js'
+  var project_js = project_location + project.toString() + '.js';
+  var project_image = project_location + project.toString() + image_type[project.toString()];
 
   jQuery.getScript(project_js, function() {
     var data = getData();
-    console.log(data);
+
+    jQuery('modal_title').html(data['title']);
   });
+
+  jQuery('#modal_image').attr('src', project_image);
 
   jQuery('#openModal').click();
   jQuery('.close-modal').hide();
