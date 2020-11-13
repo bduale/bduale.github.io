@@ -7,13 +7,20 @@ function openModal(e) {
   var project_location = 'bduale.github.io/projects/' + project.toString() + '/';
   var project_js = project_location + project.toString() + '.js';
   var project_image = project_location + project.toString() + image_type[project.toString()];
+  console.log(project.js);
 
   jQuery.getScript(project_js, function() {
     var data = getData();
 
-    jQuery('modal_title').html(data['title']);
+    jQuery('#modal_title').html(data['title']);
+    jQuery('#modal_overview').html(data['overview']);
+    jQuery('#modal_language').html(data['languages']);
+    jQuery('#modal_library').html(data['libraries']);
+    jQuery('#modal_framework').html(data['frameworks']);
+    jQuery('#github_link').html(data['link']);
   });
 
+  jQuery('#modal_image').attr('src', '');
   jQuery('#modal_image').attr('src', project_image);
 
   jQuery('#openModal').click();
