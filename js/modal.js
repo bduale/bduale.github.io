@@ -4,7 +4,7 @@ var image_type = {'march_madness': '.png', 'model_success': '.png', 'movie_recom
 
 function openModal(e) {
   var project = findProject(e);
-  var project_location = '../bduale.github.io/projects/' + project.toString() + '/';
+  var project_location = 'bduale.github.io/projects/' + project.toString() + '/';
   var project_js = project_location + project.toString() + '.js';
   var project_image = project_location + project.toString() + image_type[project.toString()];
 
