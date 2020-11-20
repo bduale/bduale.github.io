@@ -12,8 +12,9 @@ function sendEmail(){
 
   emailjs.send('service_4j7enxa', 'template_6dbf596', templateParams)
   .then(function(response) {
-     console.log('SUCCESS!', response.status, response.text);
+     if(response.status == 200)
+      jQuery('#openEmailOK').click();
   }, function(error) {
-     console.log('FAILED...', error);
+     jQuery('#openEmailFail').click();
   });
 };
