@@ -3228,3 +3228,11 @@ Main Components
 .walkthrough .screens .screen.active .media.comm .status-badge {
   transition-delay: 1.6s;
 }
+
+.iframe-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 100%;
+    overflow: hidden;
+}
