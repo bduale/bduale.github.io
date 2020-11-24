@@ -1,6 +1,6 @@
 var title = 'Movie Recommendation System';
 
-var overview = 'Developed a Recommender System that utilized a Rating Information Matrix and Side-Information (i.e., Additional Content). Built a GridSearchCV model using the Surprise library and selected two algorithms: KNNBaseline and SVD++. Tested against a Cross Validation Model for RMSE (Root Mean Square Deviation) values.';
+var overview = 'Developed a Recommender System that utilized a Rating Information Matrix. Built a GridSearchCV model using the Surprise library and selected two algorithms: KNNBaseline and SVD++. Tested against a Cross Validation Model for RMSE (Root Mean Square Deviation) values.';
 
 var languages = 'Python';
 
