@@ -6,9 +6,9 @@ var languages = 'Java, SQL';
 
 var libraries = 'Lombok';
 
-var frameworks = 'Springboot, Rest API, JUnit';
+var frameworks = 'Springboot, Apache Maven, Rest API, JUnit';
 
-var link = 'https://github.com/bduale/NCAA-Mens-Basketball-Predictor';
+var link = 'https://github.com/bduale/Shotput-Analytics';
 
 var data = {'title': title,
             'overview': overview,
