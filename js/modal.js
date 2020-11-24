@@ -7,7 +7,7 @@ function openModal(e) {
   var project_location = 'bduale.github.io/projects/' + project.toString() + '/';
   var project_js = project_location + project.toString() + '.js';
   var project_image = project_location + project.toString() + image_type[project.toString()];
-  console.log(project.js);
+  console.log(project_js);
 
   jQuery.getScript(project_js, function() {
     var data = getData();
