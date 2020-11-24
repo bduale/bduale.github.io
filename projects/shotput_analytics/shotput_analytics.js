@@ -1,12 +1,12 @@
 var title = 'Track and Field Analytics';
 
-var overview = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Woow';
+var overview = 'Participated in a class project to develop a web application to measure, record, and monitor results of high school Shotput players. Team tasked with database storage and maintenance. Utilized springboot to create an API for other teams to utilize to get and store data.';
 
-var languages = 'Python';
+var languages = 'Java, SQL';
 
-var libraries = 'pandas';
+var libraries = 'Lombok';
 
-var frameworks = 'jupyter notebook';
+var frameworks = 'Springboot, Rest API, JUnit';
 
 var link = 'https://github.com/bduale/NCAA-Mens-Basketball-Predictor';
 
