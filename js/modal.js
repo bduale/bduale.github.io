@@ -21,6 +21,7 @@ function openModal(e) {
       jQuery('#github_link').hide();
     }
     else {
+      jQuery('#github_link').show();
       jQuery('#github_link').attr('href', data['link']);
     }
   });
