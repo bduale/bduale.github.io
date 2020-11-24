@@ -8,7 +8,7 @@ var libraries = 'pandas';
 
 var frameworks = 'jupyter notebook';
 
-var link = 'https://github.com/bduale/NCAA-Mens-Basketball-Predictor';
+var link = '';
 
 var data = {'title': title,
             'overview': overview,

@@ -17,7 +17,10 @@ function openModal(e) {
     jQuery('#modal_language').html(data['languages']);
     jQuery('#modal_library').html(data['libraries']);
     jQuery('#modal_framework').html(data['frameworks']);
-    jQuery('#github_link').attr('href', data['link']);
+    if(data['link'] == '')
+      jQuery('#github_link').hide();
+    else
+      jQuery('#github_link').attr('href', data['link']);
   });
 
   jQuery('#modal_image').attr('src', '');
