@@ -20,7 +20,7 @@ function openModal(e) {
     if(data['link'] == '') {
       jQuery('#github_link').hide();
     }
-    else {//
+    else {
       jQuery('#github_link').show();
       jQuery('#github_link').attr('href', data['link']);
     }
