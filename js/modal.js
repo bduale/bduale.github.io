@@ -3,11 +3,13 @@ var image_type = {'march_madness': '.png', 'model_success': '.png', 'movie_recom
 
 
 function openModal(e) {
+  console.log(e);
   var project = findProject(e);
   var project_location = 'bduale.github.io/projects/' + project.toString() + '/';
   var project_js = project_location + project.toString() + '.js';
   var project_image = project_location + project.toString() + image_type[project.toString()];
   console.log(project_js);
+
 
   jQuery.getScript(project_js, function() {
     var data = getData();
@@ -25,8 +27,8 @@ function openModal(e) {
     }
   });
 
-  jQuery('#modal_image').attr('src', '');
-  jQuery('#modal_image').attr('src', project_image);
+  //jQuery('#modal_image').attr('src', '');
+  //jQuery('#modal_image').attr('src', project_image);
 
   jQuery('#openModal').click();
   jQuery('.close-modal').hide();
