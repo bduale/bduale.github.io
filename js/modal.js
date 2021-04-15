@@ -13,6 +13,7 @@ function openModal(e) {
 
   jQuery.getScript(project_js, function() {
     var data = getData();
+	console.log(data);
 
     jQuery('#modal_title').html(data['title']);
     jQuery('#modal_overview').html(data['overview']);
