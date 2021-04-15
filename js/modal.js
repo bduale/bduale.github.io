@@ -9,7 +9,7 @@ function openModal(e) {
   var project_js = project_location + project.toString() + '.js';
   var project_image = project_location + project.toString() + image_type[project.toString()];
   console.log(project_js);
-
+  console.log('updated');
 
   jQuery.getScript(project_js, function() {
     var data = getData();
