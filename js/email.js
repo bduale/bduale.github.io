@@ -10,7 +10,7 @@ function sendEmail(){
 
   emailjs.init("user_6P9Wygp8sEAKC4NKoVgrF");
 
-  emailjs.send('service_4j7enxa', 'template_6dbf596', templateParams)
+  emailjs.send('service_ir8ppsd', 'template_6dbf596', templateParams)
   .then(function(response) {
      if(response.status == 200)
       jQuery('#openEmailOK').click();
