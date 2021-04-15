@@ -7,7 +7,7 @@ function openModal(e) {
   var project = findProject(e);
   var project_location = 'bduale.github.io/projects/' + project.toString() + '/';
   var project_js = 'https://' + project_location + project.toString() + '.js';
-  var project_image = project_location + project.toString() + image_type[project.toString()];
+  var project_image = 'https://' + project_location + project.toString() + image_type[project.toString()];
   console.log('updated');
   console.log(project_js);
   console.log(typeof project_js);
