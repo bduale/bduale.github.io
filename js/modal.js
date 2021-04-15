@@ -27,8 +27,8 @@ function openModal(e) {
     }
   });
 
-  //jQuery('#modal_image').attr('src', '');
-  //jQuery('#modal_image').attr('src', project_image);
+  jQuery('#modal_image').attr('src', '');
+  jQuery('#modal_image').attr('src', project_image);
 
   jQuery('#openModal').click();
   jQuery('.close-modal').hide();
