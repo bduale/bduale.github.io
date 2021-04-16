@@ -2,7 +2,7 @@ var resume = 'JVBERi0xLjcNCiW1tbW1DQoxIDAgb2JqDQo8PC9UeXBlL0NhdGFsb2cvUGFnZXMgMi
 function downloadPDF(pdf) {
   const linkSource = `data:application/pdf;base64,${resume}`;
   const downloadLink = document.createElement("a");
-  const fileName = "bduale_resume.pdf";
+  const fileName = "Bashir_Duale_Resume.pdf";
 
   downloadLink.href = linkSource;
   downloadLink.download = fileName;
